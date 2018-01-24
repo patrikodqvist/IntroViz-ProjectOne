@@ -1,0 +1,48 @@
+body {
+	color:white;
+	background-color: rgb(2,41,54);
+	height: 100%;
+	overflow: none;
+}
+
+#title {
+	margin-top: 5%;
+	font-size:6em;
+	text-align: center;
+	padding-bottom: 5%;
+}
+
+#openChart{
+	font-family: futura;
+	text-align: left;
+	color:white;
+	height: 4em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+#openChart:hover {	
+	background-color: rgb(1,23,31);
+}
+
+#boxes{
+	font-family: futura;
+	text-align: center;
+	color:white;
+	height: 3em;
+	padding-top: 1em;
+}
+#boxes:hover {	
+	
+	background-color: rgb(1,23,31);
+}
+
+#labelRow {
+	border-bottom: 1px solid white;
+}
+
+#rowInfo {
+	height: 3em;
+	border:1px solid white;
+	font-family: futura;
+	font-size:2em;
+}

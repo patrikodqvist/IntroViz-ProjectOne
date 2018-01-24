@@ -1,0 +1,69 @@
+<div class="row">
+	<div class="col-md-2">
+	</div>
+	<div class="col-md-8">
+		<div class="row">
+			<div class="col-md-12" id="title">
+				<h1>Group Visualization Project One</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12" style="color:white; font-family: futura; font-size: 2em; text-align: center; padding-bottom: 3em;">
+				<div class="row">
+					<div class="col-md-2">
+					</div>
+					<div class="col-md-2">
+						<a ng-click="back()" id="backButton" style="display: none">
+								<---
+						</a>
+					</div>
+					<div class="col-md-4" style="text-align: left;">
+						Amount of people: <span id="numPeople"></span>/83
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+			</div>
+			<div class="col-md-6">
+				<select id="selector" ng-model="selected" ng-change="refilter(selected)" style="color:black; height: 2em; font-size: 1em; font-family: futura;" placeholder="Change question">
+  					<option style="color:black; font-size: 1em; font-family: futura;" ng-repeat="label in labels" value="{{label}}">{{label}}</option>
+  					<option id="defaultValue">Change Question</option>
+				</select>
+				<br>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div id="ringbar"></div>
+			</div>
+		</div>
+		<div class="row" id="labelRow">
+			<div class="col-md-3">
+				Name
+			</div>
+			<div class="col-md-1">
+				Skill group
+			</div>
+			<div class="col-md-3">
+				Major
+			</div>
+		</div>
+		<div class="row" ng-repeat="person in displayList" id="rowInfo">
+			<div class="col-md-3">
+				{{person["Alias"]}}
+			</div>
+			<div class="col-md-1">
+				{{person[group]}}
+			</div>
+			<div class="col-md-7">
+				{{person["What is your Major?"]}}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12" style="height: 10em;">
+			</div>
+		</div>
+	</div>
+</div>
